@@ -19,6 +19,7 @@ exercise.findBiggerSalaries = function(){
             if (currentSal > exercise.salary) {
                 num_salaries += 1;}
             }
+     console.log("Hello");       
     return num_salaries;
         }
     // ---------------------------------------------------
@@ -34,12 +35,18 @@ exercise.findBiggerSalaries = function(){
 
 // filter function
 exercise.largerSalary = function largerSalary(item){
-
+    if (item > exercise.salary)
+    {
+        return True;
+    }
+    else
+    {
+        return False;
+    }
+}
     // ---------------------------------------------------
     //   YOUR CODE
     //
     //     Return a boolean (true/false) if item
     //     is larger than exercise.salary
     // ---------------------------------------------------
-
-};
