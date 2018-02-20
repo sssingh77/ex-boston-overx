@@ -11,7 +11,16 @@ exercise.load = function(salary, boston){
 
 // get salaries larger than given salary
 exercise.findBiggerSalaries = function(){
-
+    var num_salaries = 0;
+    var currentSal = 0;
+    var dataLength = exercise.salaries.length;
+    for (var i = 0; i < dataLength; i++) {
+        currentSal = Number(exercise.salaries[i][18]);
+            if (currentSal > exercise.salary) {
+                num_salaries += 1;}
+            }
+    return num_salaries;
+        }
     // ---------------------------------------------------
     //   YOUR CODE
     //
@@ -21,7 +30,7 @@ exercise.findBiggerSalaries = function(){
     //     Example: salaries larger than 300K is 8
     // ---------------------------------------------------
 
-};
+
 
 // filter function
 exercise.largerSalary = function largerSalary(item){
