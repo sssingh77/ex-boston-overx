@@ -37,11 +37,11 @@ exercise.findBiggerSalaries = function(){
 exercise.largerSalary = function largerSalary(item){
     if (item > exercise.salary)
     {
-        return True;
+        return true;
     }
     else
     {
-        return False;
+        return false;
     }
 }
     // ---------------------------------------------------
